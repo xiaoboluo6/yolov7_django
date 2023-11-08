@@ -1,4 +1,4 @@
-### 安装：
+### 安装和运行：
 ```
 # 基础环境
 conda create -name env python=3.6
@@ -9,6 +9,10 @@ cd path/to/yolov7_django
 
 # 这里我默认使用的是CPU版本的torch和torchvision，换成GPU的话自己修改或者额外进行pip
 pip install -r requirements.txt
+
+# 运行 激活环境的情况下 在path/to/yolov7_django目录中
+python manage.py runserver
+# 然后直接访问http://127.0.0.1:8000/index/即可
 ```
 
 ### 权重文件的替换：
