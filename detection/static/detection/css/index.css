@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* 自定义文件选择按钮 */
+.upload-file {
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* 自定义上传按钮 */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 鼠标悬停时的效果 */
+.upload-file:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.image img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.output_num {
+    text-align: left;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FF5733;
+    margin-top: 20px;
+}
+
+
+
+/* 自定义 "Confidence level" 输入文本框的样式 */
+.conf-container {
+    display: flex; /* 设置为弹性布局，以使内容垂直居中 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+/* 文本标签样式 */
+.conf-label {
+    font-size: 18px; /* 字体大小 */
+    margin-right: 5px; /* 右边距，添加间距以与输入框分隔 */
+    margin-top: 5px; /* 上边距，添加间隔与上方元素分隔 */
+}
+
+/* 输入文本框样式 */
+.conf-input {
+    border: 1px solid #ccc; /* 边框 */
+    padding: 5px; /* 内边距 */
+    font-size: 18px; /* 字体大小 */
+    width: 100px; /* 宽度 */
+    height: 30px; /* 高度 */
+    margin-top: 5px; /* 上边距，添加间隔与上方元素分隔 */
+    margin-bottom: 5px; /* 下边距，添加间隔与下方元素分隔 */
+}

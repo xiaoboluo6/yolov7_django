@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'detection/css/index.css' %}">
+    <title>Yolov7 with Django</title>
+</head>
+<body>
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input class="upload-file" type="file" name="image"><br>
+        <div class="conf-container">
+            <label for="conf" class="conf-label">阈值：</label>
+            <input type="text" id="conf" name="conf" value="0.25" class="conf-input">
+        </div>  <!-- 添加 confidence 输入文本 -->
+        <button class="button" type="submit">开始检测</button>
+    </form>
+
+
+    {% if conf_thresh %}
+        <h3 class="result">结果如下  阈值conf={{conf_thresh}}</h3>
+    {% endif %}
+
+    <div class="image">
+        {% if input_image %}
+            <img src="{{ input_image }}" alt="input">
+        {% endif %}
+
+        {% if output_image %}
+            <img src="{{ output_image }}" alt="output">
+        {% endif %}
+    </div>
+
+    {% if output_num %}
+        <div class="output_num">
+            电子秤检测结果：{{ output_num }}
+        </div>
+    {% endif %}
+
+</body>
+</html>
