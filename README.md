@@ -22,9 +22,9 @@ pip install -r requirements.txt
 │  ├─yolov7model
 │  │  ├─...
 │  │  ├─weights
-│  │  	└─ElectronicScale0310Best.pt       # 权重文件放置位置
+│  │  	└─ElectronicScale0310Best.pt           # 权重文件放置位置
 │  │  └─...
-│  ├─views.py                                  # 调整权重文件名称等参数
+│  ├─views.py                                  # 调整权重文件名称路径等参数
 │  ├─...
 ├─manage.py
 ├─images                                       # 效果图和测试图
