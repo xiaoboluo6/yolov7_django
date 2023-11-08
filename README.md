@@ -13,6 +13,7 @@ pip install -r requirements.txt
 # 运行 激活环境的情况下 在path/to/yolov7_django目录中
 python manage.py runserver
 # 然后直接访问http://127.0.0.1:8000/index/即可
+# 我放了五张测试图片在images里面 有好有坏 有阴影的数字难以识别，准确率较低
 ```
 
 ### 权重文件的替换：
